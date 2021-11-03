@@ -1,0 +1,7 @@
+*.cnf
+*.ini
+.idea/
+secret.py
+.DS_Store
+*.pyc
+Runfile
