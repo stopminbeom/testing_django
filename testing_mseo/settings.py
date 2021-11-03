@@ -78,7 +78,8 @@ WSGI_APPLICATION = 'testing_mseo.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASE_URL = os.environ['DATABASE_URL']
-DATABASES['defalut'].update(db_from_env)
+db_from_env = dj_database_url.config(conn_max_age=500)
+#DATABASES['defalut'].update(db_from_env)
 
 
 # Password validation
